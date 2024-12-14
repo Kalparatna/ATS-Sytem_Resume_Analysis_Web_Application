@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff; /* White background for container */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray color */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px; /* Larger font size for labels */
+    color: #555; /* Dark gray color for labels */
+}
+
+select {
+    width: calc(100% - 40px); /* Adjusted width */
+    padding: 12px;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    appearance: none; /* Removes default arrow in Firefox */
+    -webkit-appearance: none; /* Removes default arrow in WebKit browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#555" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+input[type="submit"] {
+    background-color: #2ecc71; /* Green background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Additional styles for hover effect */
+select:hover {
+    border-color: #2980b9; /* Change border color on hover */
+}
+
+/* Adjust background color on hover for the entire container */
+.container:hover {
+    background-color: #f9f9f9; /* Light gray background color on hover */
+}

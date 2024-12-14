@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Job Post</title>
+    <style>
+        /* Reduce width for smaller screens */
+        body {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Style for form labels and inputs */
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='create_job.css') }}">
+</head>
+<body>
+    <h1>Create Job Post</h1>
+    <form method="POST" action="{{ url_for('create_job') }}">
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" required>
+
+        <label for="job_description">Job Description:</label>
+        <textarea id="job_description" name="job_description" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

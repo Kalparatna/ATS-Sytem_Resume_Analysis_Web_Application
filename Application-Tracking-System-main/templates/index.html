@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Application Tracking System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI RESUME ANALYSER</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="mobile" name="mobile" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required><br><br>
+            <label for="jd">Paste the Job Description:</label>
+            <textarea id="jd" name="jd" rows="4" cols="50" required></textarea><br><br>  
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx,.txt,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple required><br><br>
+
+
+            <!-- Mode: Online or Offline -->
+            <label for="mode">Mode:</label>
+            <select id="mode" name="mode" required>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+            </select><br><br>
+
+            <!-- Type: Part Time or Full Time -->
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+                <option value="part-time">Part Time</option>
+                <option value="full-time">Full Time</option>
+            </select><br><br>
+
+            <!-- Location: Input field -->
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
