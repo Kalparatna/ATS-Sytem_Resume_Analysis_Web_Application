@@ -29,7 +29,7 @@ This web application is designed for employees to upload their resumes and recei
 
 1. Clone the repository.
    ```bash
-   git clone <repository-url>
+   git clone (https://github.com/Kalparatna/ATS-Sytem_Resume_Analysis_Web_Application.git)
    cd <project-folder>
 Install required packages:
 
